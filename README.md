@@ -1,2 +1,2 @@
 # CadastroDeEmail
- Requisição asincrona com fetch api e Promise
+ Requisição assincrona com fetch api e Promise
