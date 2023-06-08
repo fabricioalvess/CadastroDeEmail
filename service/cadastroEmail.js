@@ -9,7 +9,7 @@ const form = document.querySelector('[data-form]')
         const email = evento.target.querySelector('[data-email]').value
         cliente.criarEmail(nome,email)
         .then(()=>{
-            window.location.href = "../paginas/mostrarEmail.html"
+            window.location.href = "../paginas/index.html"
         })
     
     }
