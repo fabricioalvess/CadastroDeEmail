@@ -5,6 +5,7 @@ const conexao = ()=>{
     })
 }
 
+
 const criarEmail = (nome,email)=>{
     return fetch(`http://localhost:3000/email`, {
         method:'POST',
@@ -21,7 +22,18 @@ const criarEmail = (nome,email)=>{
     })
 }
 
+
+const removerEmail = (id)=>{
+    return fetch(`http://localhost:3000/email/${id}`,{
+        method: "DELETE"
+    })
+}
+
+
+
+
 export const cliente={
     conexao,
-    criarEmail
+    criarEmail,
+    removerEmail
 }

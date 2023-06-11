@@ -1,29 +1,19 @@
 {
   "email": [
     {
-      "id": 1,
       "nome": "fabricio",
-      "email": "fabricio@email.com"
-    },
-    {
-      "nome": "a",
-      "email": "aaa@aaa",
-      "id": 2
+      "email": "fabricio@email.com",
+      "id": 1
     },
     {
       "nome": "daniela",
       "email": "daniela@email.com",
+      "id": 2
+    },
+    {
+      "nome": "cassio",
+      "email": "cassio@email.com",
       "id": 3
-    },
-    {
-      "nome": "a",
-      "email": "aaa@aa",
-      "id": 4
-    },
-    {
-      "nome": "bbb",
-      "email": "bbb@www",
-      "id": 5
     }
   ]
 }
