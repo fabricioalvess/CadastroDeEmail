@@ -4,16 +4,6 @@
       "nome": "fabricio",
       "email": "fabricio@email.com",
       "id": 1
-    },
-    {
-      "nome": "daniela",
-      "email": "daniela@email.com",
-      "id": 2
-    },
-    {
-      "nome": "cassio",
-      "email": "cassio@email.com",
-      "id": 3
     }
   ]
 }

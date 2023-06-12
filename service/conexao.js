@@ -22,10 +22,34 @@ const criarEmail = (nome,email)=>{
     })
 }
 
+const detalhaCliente = (id)=>{
+    return fetch(`http://localhost:3000/email/${id}`)
+    .then(resposta =>{
+        return resposta.json()
+    })
+}
+
 
 const removerEmail = (id)=>{
     return fetch(`http://localhost:3000/email/${id}`,{
         method: "DELETE"
+    })
+}
+const atualizaEmail = (id, nome, email)=>{
+    return fetch(`http://localhost:3000/email/${id}`,{
+        method:'PUT',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+            {
+                nome: nome,
+                email: email
+            }
+        )
+    })
+    .then(resposta =>{
+        return resposta.json()
     })
 }
 
@@ -35,5 +59,7 @@ const removerEmail = (id)=>{
 export const cliente={
     conexao,
     criarEmail,
-    removerEmail
+    removerEmail,
+    detalhaCliente,
+    atualizaEmail
 }
