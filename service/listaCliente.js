@@ -14,7 +14,6 @@ const criaNovaLinha = (nome, email, id)=>{
     `
     linhaNova.innerHTML = conteudo
     linhaNova.dataset.id = id
-    console.log(linhaNova)
     return linhaNova
 }
 
@@ -23,6 +22,7 @@ tabela.addEventListener('click',(evento) =>{
     let botaoDeletarEmail = evento.target.className === "botaoexcluir"
     if(botaoDeletarEmail){
         const linhaCliente = evento.target.closest('[data-id]')
+        console.log(linhaCliente)
         let id = linhaCliente.dataset.id
         cliente.removerEmail(id)
         .then(()=>{
@@ -38,3 +38,4 @@ cliente.conexao()
         })
     }
 )
+
